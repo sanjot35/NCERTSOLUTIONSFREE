@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="edit_Text">
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/edit_text_background</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:ems">10</item>
+    <item name="android:layout_margin">8dp</item>
+</style>
+    <style name="button_back">
+        <item name="android:background">@drawable/button_style</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">#FDFDFE</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="signupedit">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+
+    </style>
+    <style name="pickersytle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">#FDFDFE</item>>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/numb</item>
+        <item name="android:text">Choose Chapter</item>
+
+    </style>
+
+</resources>

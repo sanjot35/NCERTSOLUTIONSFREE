@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.goo_dev.ncertsolutionsfree.LOGIN$PlaceholderFragment">
+
+    <EditText
+        android:id="@+id/editname_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/signupedit"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editmail_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/signupedit"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/editname_signup"
+        android:layout_alignLeft="@+id/editname_signup"
+        android:layout_alignStart="@+id/editname_signup" />
+
+    <EditText
+        android:id="@+id/editUsername_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editmail_signup"
+        android:layout_alignStart="@+id/editmail_signup"
+        android:layout_below="@+id/editmail_signup"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        style="@style/signupedit"
+        android:inputType="textPersonName"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editpassword_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        style="@style/signupedit"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editUsername_signup"
+        android:layout_alignLeft="@+id/editUsername_signup"
+        android:layout_alignStart="@+id/editUsername_signup" />
+
+    <EditText
+        android:id="@+id/editconfirmpass_signup"
+        android:hint="Confirm Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/signupedit"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editpassword_signup"
+        android:layout_alignLeft="@+id/editpassword_signup"
+        android:layout_alignStart="@+id/editpassword_signup" />
+
+    <Button
+        android:id="@+id/button_Signup"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="23dp"
+        android:text="Sign up"
+        android:textColor="#FDFDFE"
+        android:onClick="Signup_databse"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/editconfirmpass_signup"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Be a Member"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/editmail_signup"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageViewsignup"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/app_logo" />
+</RelativeLayout>

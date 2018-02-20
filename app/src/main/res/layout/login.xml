@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Rlogin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.goo_dev.ncertsolutionsfree.LOGIN$PlaceholderFragment">
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical"
+        android:layout_margin="60dp">
+
+        <ImageView
+            android:id="@+id/app_loogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="NCERT SOLUTIONS"
+            android:textColor="@color/text"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editUsername_login"
+            style="@style/edit_Text"
+            android:layout_margin="10dp"
+            android:hint="Username"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editPassword_login"
+            style="@style/edit_Text"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/button_back"
+            android:onClick="Login_Database"
+            android:text="Log In" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
